@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+    <label for="imageUpload" class="upload-label">
+        Choose...
+    </label>
+    <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+
+
+{% block content %}
+    <div class="jumbotron">
+
+      <p> Welcome to my TensorFlow demo using a webcam</p>
+      <hr class="my-4">
+
+
+      <div class="container">
+        <div class="row">
+
+            <div class="col">
+
+            </div>
+
+            <div class="col-5">
+                <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+            </div>
+
+            <div class="col">
+
+            </div>
+
+        </div>
+      </div>
+
+        <div class="row">
+          <div id="console"></div>
+        </div>
+
+
+    </div>
+
+{% endblock %}
